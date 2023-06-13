@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    font-size: 10px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*--upper case start here*/
+#my-navigation{
+    background-color: rgb(120,38,45);
+    color: #fff;
+    padding:1rem 1rem ;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+#logo{
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+#mynavbar ul li a{
+    font-size: 1.8rem;
+    color: #fff;
+    padding-right: 3rem;
+}
+#my-navigation img{
+  float: left;
+  padding-left: 3rem;
+}
+.upper{
+    background-image: url(../images/pexels-tirachard-kumtanom-587441.jpg);
+}
+.banner{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-position: center;
+    padding: 4rem 0rem;
+}
+.banner h1{
+    font-size: 5rem;
+    font-weight: 800;
+}
+.banner h2{
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-top: 2rem;
+}
+.one{
+    width: 50%;
+    margin-left: 3rem;
+    padding-top: 1rem;
+}
+.one .carousel-indicators{
+    position: relative;
+    top:24rem;
+}
+.item h1{
+    margin-top: 1rem;
+}
+.item{
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+.image{
+    width: 44%;
+    text-align: center;
+}
+.image img{
+    width: 50%;
+    border-radius: 10%;
+}
+/*--upper case ends here*/
+
+
+/*--about  start here*/
+
+.about{
+    padding: 6rem 0;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.aboutfirst{
+    width: 48%;
+}
+.aboutfirst span{
+    font-size: 1.6rem;
+}
+.aboutsecond{
+    width: 47%;
+}
+.form{
+   
+}
+
+.about h1{
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.about h3{
+    font-size: 3rem;
+}
+.about p{
+    font-size: 1.9rem;
+    color: gray;
+    line-height: 3rem;
+    padding: 3rem 0;
+}
+ input{
+    border: 0;
+    font-size: 1rem;
+}
+label{
+    font-size: 1.6rem;
+}
+.first {
+    width: 95%;
+}
+.port-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*--abouts ends here*/
+
+/*--Projects start here*/
+
+.projects{
+    background-color: rgb(185, 180, 180);
+    padding: 3rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pro-first{
+  width: 48%;    
+  border: 20px solid black;
+  border-image:linear-gradient(rgb(250,244,66),rgb(0,143,104));
+  border-image-slice:1;
+  border-image-width:20px;
+  margin-bottom: 30px;
+}
+.pro-first img{
+    width: 100%;
+  
+}
+
+.projects h1{
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+}
+.projects hr{
+    width: 19rem;
+    margin-bottom: 3rem;
+}
+
+/*--Projects ends here*/
+
+/*--footer start here*/
+
+footer{
+text-align: center;
+background-color: black;
+padding: 2rem 0;
+}
+footer p{
+ color: #fff;
+ font-size: 1.8rem;
+}
+/*--footer ends here*/
+
+@media only screen and (max-width:1205px) and (min-width:900px){
+    .item h1{
+        font-size: 4rem;
+    }
+    .item h2{
+        font-size: 3.5rem;
+        margin-top:1rem;
+    }
+    .aboutfirst form{
+    }
+     label{
+      font-size:15px;
+    }
+}
+
+@media only screen and (max-width:899px) and (min-width:700px){
+    .item h1{
+        font-size: 3rem;
+    }
+    .item h2{
+        font-size: 3rem;
+    }
+    .one .carousel-indicators{
+        position: relative;
+        top:20rem;
+    }
+    .about h1{
+        font-size: 4rem;
+    }
+    .aboutfirst h3{
+    font-size: 2.5rem;
+    }
+    .aboutfirst p{
+        font-size: 1.8rem;
+        padding: 2rem 0;
+    }
+
+}
+@media only screen and (max-width:700px) and (min-width:1px){
+    .one{
+        width: 100%;
+    }
+    .one h1{
+      font-size: 3.5rem;
+    }
+    .one h2{
+        font-size: 3.1rem;
+    }
+    .one .carousel-indicators{
+        position: relative;
+        top:22rem;
+    }
+    .image {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .aboutfirst{
+        width: 100%;
+        text-align: center
+    }
+    .aboutfirst h3{
+        font-size: 2.5rem;
+    }
+    .about p{
+        font-size: 1.8rem;
+    }
+    .aboutsecond{
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .pro-first{
+        width: 100%;
+    }
+    footer p{
+        font-size: 1.6rem;
+    }
+}
