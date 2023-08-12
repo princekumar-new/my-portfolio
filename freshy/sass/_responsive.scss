@@ -1,0 +1,129 @@
+
+@media only screen and (max-width:992px) and (min-width:768px){
+    #my-navigation  ul li a {
+        font-size: 1.2rem;
+    }
+    .three-img{
+        position: absolute;
+        top:19rem;
+    }
+    .three-section{
+        position: absolute;
+        top:13rem;
+        left: 4rem;
+    }
+    .scheduling h2{
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+    }
+
+    .scheduling p{
+       line-height: 2rem;
+       font-size: 1.2rem;
+    }
+
+    .Lasso {
+        width: 31%;
+    }
+    
+}
+
+@media only screen and (max-width:768px) and (min-width:1px){
+
+    #my-navigation  ul li a {
+        font-size: 1.2rem;
+    }
+    .event h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+   .event {
+    width: 95%;
+    margin:2rem auto;
+
+   }
+   .production-img {
+    width: 95%;
+    margin: 4rem auto;
+   }
+
+   .five-img{
+    margin: 4rem auto;
+
+   }
+   .image-section{
+    position: relative;
+   }
+
+.three-img{
+    position: absolute;
+    top:35rem;
+    left: 1rem;
+}
+.s1,.serve,.text{
+    width: 95%;
+    margin:2rem auto;
+}
+.s1{
+    margin-bottom: 3rem;
+}
+.serve img{
+    width: 90%;
+}
+.three-section{
+    position: absolute;
+    top:14rem;
+    left: 3rem;
+}
+
+.Stephanie{
+    padding: 2rem 0;
+}
+
+.scheduling{
+    width: 95%;
+    margin: 0 auto;
+}
+.scheduling-img{
+    width: 95%;
+    margin: 4rem auto;
+
+}
+
+.Lasso {
+    width: 47%;
+    margin: 0 auto;
+}
+
+.privacy p,.privacy h5{
+    width: 95%;
+    text-align: center;
+}
+.carousel .text-img p{
+    font-size: 1.2rem;
+}
+
+.owl-prev,.owl-next {
+    top:6.5rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width:641px) and (min-width:469px){
+    .three-img{
+        position: absolute;
+        top:27rem;
+        left: 1rem;
+    }
+}
+
+@media only screen and (max-width:469px) and (min-width:1px){
+    .three-img{
+        position: absolute;
+        top:19rem;
+        left: 1rem;
+    }
+}
