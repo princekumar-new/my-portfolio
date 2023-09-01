@@ -78,6 +78,11 @@ html{
     top:30rem;
 }
 .item h1{
+    font-size:5rem;
+}
+.item h2{
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 .item{
     margin-left: 2rem;
