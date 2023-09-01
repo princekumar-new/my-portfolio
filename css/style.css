@@ -15,7 +15,7 @@ html{
 }
 /*--upper case start here*/
 #my-navigation{
-    background-color: rgb(120,38,45);
+    background-color:rgb(175, 175, 210);
     color: #fff;
     padding:1rem 1rem ;
     border: 0;
@@ -33,6 +33,11 @@ html{
     color: #fff;
     padding-right: 3rem;
 }
+#mynavbar ul li a:hover{
+    color: #524a4a;
+    transform: scale(1.1);
+    transition: all 1s linear 0s;
+}
 #my-navigation img{
   float: left;
   padding-left: 3rem;
@@ -41,7 +46,7 @@ html{
     background-image: url(../images/pexels-tirachard-kumtanom-587441.jpg);
 }
 .banner{
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -54,9 +59,14 @@ html{
     font-weight: 800;
 }
 .banner h2{
-    font-size: 4.5rem;
-    font-weight: 800;
-    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+}
+#element{
+    color: rgb(72, 72, 120);
+    font-size: 3rem;
+    font-weight: 700;
 }
 .one{
     width: 50%;
@@ -65,10 +75,9 @@ html{
 }
 .one .carousel-indicators{
     position: relative;
-    top:24rem;
+    top:30rem;
 }
 .item h1{
-    margin-top: 1rem;
 }
 .item{
     margin-left: 2rem;
@@ -88,7 +97,7 @@ html{
 /*--about  start here*/
 
 .about{
-    padding: 6rem 0;
+    padding: 8rem 0;
     font-family: 'Poppins', sans-serif;
 
 
@@ -100,6 +109,16 @@ html{
 }
 .aboutfirst{
     width: 48%;
+}
+.aboutfirst .new p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.aboutfirst .new p span{
+    margin-right: 1rem;
 }
 .aboutfirst span{
     font-size: 1.6rem;
@@ -180,11 +199,11 @@ label{
 
 footer{
 text-align: center;
-background-color: black;
+background-color:rgb(175, 175, 210);
 padding: 2rem 0;
 }
 footer p{
- color: #fff;
+ color: white;
  font-size: 1.8rem;
 }
 /*--footer ends here*/
@@ -239,11 +258,15 @@ footer p{
     }
     .one .carousel-indicators{
         position: relative;
-        top:22rem;
+        top:25rem;
+    }
+    .item{
+        width: 90%;
+        margin: 0 auto;
     }
     .image {
         width: 100%;
-        margin-top: 2rem;
+        margin: 5rem 0;
     }
     .aboutfirst{
         width: 100%;
