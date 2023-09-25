@@ -5,6 +5,10 @@ body{
     font-family: 'Poppins', sans-serif;
 
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 html{
     font-size: 10px;
 }
@@ -15,11 +19,14 @@ html{
 }
 /*--upper case start here*/
 #my-navigation{
-    background-color:rgb(175, 175, 210);
-    color: #fff;
-    padding:1rem 1rem ;
+    width: 100%;
+    color: cyan;
+    background: none;
     border: 0;
     font-family: 'Poppins', sans-serif;
+    animation: nav 1s ease-in forwards;
+    position:fixed;
+    margin: 2rem ;
 
 }
 #logo{
@@ -28,13 +35,33 @@ html{
     font-family: 'Poppins', sans-serif;
 
 }
+#logo:hover{
+    color: cyan;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 2s 100ms ease-in;
+
+
+}
+
+    @keyframes nav{
+        0%{
+            transform: translate(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+
 #mynavbar ul li a{
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #fff;
-    padding-right: 3rem;
+    margin-right: 3rem;
 }
 #mynavbar ul li a:hover{
-    color: #524a4a;
+    color: cyan;
     transform: scale(1.1);
     transition: all 1s linear 0s;
 }
@@ -43,10 +70,10 @@ html{
   padding-left: 3rem;
 }
 .upper{
-    background-image: url(../images/pexels-tirachard-kumtanom-587441.jpg);
+    background:rgb(60, 9, 60);
 }
 .banner{
-    margin-top: 1rem;
+    margin: 8rem 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -56,15 +83,44 @@ html{
 }
 .banner h1{
     font-size: 5rem;
-    font-weight: 800;
+    font-weight: 600;
+    color: #fff;
 }
 .banner h2{
+    color: #fff;
     font-size: 4rem;
     font-weight: 700;
     margin-top: 1.2rem;
+    animation: h2h 1000ms ease-in forwards;
+}
+.button{
+    margin-top: 5rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    background-color:rgb(74, 16, 74);
+
+    border: none;
+    border-radius: 1rem;
+}  
+.button:hover{
+    transition: all 300ms 100ms ease-in;
+    box-shadow: 0px 0px 60px cyan;
+
+}
+.one button a{
+    text-decoration: none;
+    color: #fff;
+}
+@keyframes h2h {
+    0% {transform:translate(-100px);
+        opacity: 0;
+    }
+    100% {transform:translate(0px);
+        opacity: 1;
+    }
 }
 #element{
-    color: rgb(72, 72, 120);
+    color: cyan;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -73,28 +129,17 @@ html{
     margin-left: 3rem;
     padding-top: 1rem;
 }
-.one .carousel-indicators{
-    position: relative;
-    top:30rem;
-}
-.item h1{
-    font-size:5rem;
-}
-.item h2{
-    font-size: 3.5rem;
-    font-weight: 700;
-}
-.item{
-    margin-left: 2rem;
-    padding: 1rem 0;
-}
+
+
 .image{
     width: 44%;
     text-align: center;
 }
 .image img{
-    width: 50%;
+    width: 55%;
     border-radius: 10%;
+    box-shadow: 2px 2px 50px cyan;
+
 }
 /*--upper case ends here*/
 
@@ -114,6 +159,7 @@ html{
 }
 .aboutfirst{
     width: 48%;
+    animation: h2h 1s ease forwards;
 }
 .aboutfirst .new p{
     padding: 0;
@@ -130,7 +176,10 @@ html{
 }
 .aboutsecond{
     width: 47%;
+    animation: h2h;
+
 }
+
 .form{
    
 }
@@ -195,7 +244,8 @@ label{
 }
 .projects hr{
     width: 19rem;
-    margin-bottom: 3rem;
+    margin: 0 auto;
+    padding-bottom: 3rem;
 }
 
 /*--Projects ends here*/
@@ -204,7 +254,7 @@ label{
 
 footer{
 text-align: center;
-background-color:rgb(175, 175, 210);
+background:rgb(60, 9, 60);
 padding: 2rem 0;
 }
 footer p{
@@ -252,6 +302,10 @@ footer p{
 
 }
 @media only screen and (max-width:700px) and (min-width:1px){
+    #my-navigation ul{
+        display: flex;
+        justify-content: space-between;
+    }
     .one{
         width: 100%;
     }
