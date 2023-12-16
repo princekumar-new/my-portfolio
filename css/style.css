@@ -21,18 +21,18 @@ html{
 #my-navigation{
     width: 100%;
     color: cyan;
-    background: none;
+    background:rgb(60, 9, 60);
     border: 0;
     font-family: 'Poppins', sans-serif;
     animation: nav 1s ease-in forwards;
     position:fixed;
-    margin: 2rem ;
 
 }
 #logo{
     color: #fff;
     font-size: 2.2rem;
     font-family: 'Poppins', sans-serif;
+    margin: 2rem 3rem;
 
 }
 #logo:hover{
@@ -55,10 +55,12 @@ html{
         }
     }
 
+
+
 #mynavbar ul li a{
     font-size: 2rem;
     color: #fff;
-    margin-right: 3rem;
+    margin:2rem 3rem;
 }
 #mynavbar ul li a:hover{
     color: cyan;
@@ -112,10 +114,12 @@ html{
     color: #fff;
 }
 @keyframes h2h {
-    0% {transform:translate(-100px);
+    0% {
+        transform:translate(-100px);
         opacity: 0;
     }
-    100% {transform:translate(0px);
+    100% {
+        transform:translate(0px);
         opacity: 1;
     }
 }
@@ -179,9 +183,18 @@ html{
     animation: h2h;
 
 }
+.progress{
+    width: 100%;
+    animation:my-animation 2s linear 2  alternate-reverse forwards;
+}
+@keyframes my-animation{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }    
 
-.form{
-   
 }
 
 .about h1{
