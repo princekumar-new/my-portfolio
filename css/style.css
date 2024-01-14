@@ -50,7 +50,7 @@ html{
             opacity: 0;
         }
         100%{
-            transform: translate(0px);
+            transform: translate(-10px);
             opacity: 1;
         }
     }
@@ -137,10 +137,13 @@ html{
 
 .image{
     width: 44%;
+
     text-align: center;
 }
 .image img{
     width: 55%;
+    background-size: cover;
+    background-position: center;
     border-radius: 10%;
     box-shadow: 2px 2px 50px cyan;
 
